@@ -22,5 +22,5 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
-    compile(group: 'liu.android.dev', name: 'MainUIKitLibrary', version: '1.0.0', ext: 'aar')
+//    compile(group: 'liu.android.dev', name: 'MainUIKitLibrary', version: '1.0.0', ext: 'aar')
 }
