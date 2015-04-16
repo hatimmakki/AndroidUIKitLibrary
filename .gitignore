@@ -1,1 +1,7 @@
 local.properties
+
+.idea
+build
+app/app.iml
+MainUIkitLibrary/MainUIKitLibrary.iml
+AndroidUIKitLibrary.iml
