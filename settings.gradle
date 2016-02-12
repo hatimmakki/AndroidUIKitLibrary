@@ -1,1 +1,1 @@
-include ':app',":MainUIKitLibrary"
+include ':app',":MainUIkitLibrary"
