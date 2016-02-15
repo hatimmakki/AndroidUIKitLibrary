@@ -11,12 +11,11 @@ def gitUrl = 'https://github.com/79144876/AndroidUIKitLibrary.git'
 
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "21.1.2"
-
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 20
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -52,6 +51,8 @@ android {
         exclude 'META-INF/ASL2.0'
         exclude 'META-INF/MANIFEST.MF'
 
+    }
+    productFlavors {
     }
 }
 
@@ -106,6 +107,9 @@ install {
 }
 
 dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
 }
 
 task sourcesJar(type: Jar) {
@@ -135,8 +139,4 @@ task findConventions << {
 }
 
 
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
-    compile 'com.android.support:support-v4:21.0.3'
-}
+
